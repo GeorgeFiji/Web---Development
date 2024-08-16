@@ -1,0 +1,21 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPages/SerenitySage.master" AutoEventWireup="false" CodeFile="MyHealthUsers.master.vb" Inherits="MasterPages_MyHealthUsers" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" Runat="Server">
+    <div class="main-container">
+        <aside class="MyHealth-side">
+            <ul class="MyHealth-sidebar">
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkAppointmentHistory" runat="server" NavigateUrl="~/PatientPortalPages/PatientAppointmentHistory.aspx">Appointment History</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkAddAppointment" runat="server" NavigateUrl="~/PatientPortalPages/AddAppointment.aspx">Add Appointment</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkEditAppointment" runat="server" NavigateUrl="~/PatientPortalPages/PatientEditAppointment.aspx">Edit Appointments</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkAskQuestion" runat="server" NavigateUrl="~/SitePages/ContactUs.aspx">Ask Question</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkAddFeedback" runat="server" NavigateUrl="~/SitePages/Feedback.aspx">Add Feedback</asp:HyperLink></li>
+            </ul>
+        </aside>
+        <main class="MyHealth-main">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </main>
+    </div>
+</asp:Content>

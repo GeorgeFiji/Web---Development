@@ -1,0 +1,851 @@
+﻿/*-----SerenitySage Masterpage----------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #E2DFD2;
+}
+
+/* grid container */
+.Masterpage-grid {
+    display:grid;
+    grid-template-areas:
+        'header'
+        'main-content'
+        'footer';
+}
+
+/* general column padding */
+.Masterpage-grid > * {
+    padding:1rem;
+}
+
+/* assign columns to grid areas */
+.Masterpage-grid > .header {
+    grid-area:header;
+    background-color:#176fa6;
+    padding:5px 10px;
+    max-height: 40px;
+}
+
+.Masterpage-grid > .nav {
+    grid-area:nav;
+    padding: 1px 1px;
+    background:#176fa6;
+    text-align:right;
+    max-height: 30px;
+}
+
+.Masterpage-grid > .main-content {
+    width: auto;
+    grid-area:main-content;
+    background-color: #E2DFD2;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.Masterpage-grid > .footer {
+    grid-area:footer;
+    background:#176fa6;
+    padding: 5px 10px;
+    color: White;
+    text-align: center;
+}
+
+.header-left {
+    float: left;
+    max-height: 30px;
+}
+
+.header-right {
+    margin-top: 8px;
+    margin-right: 10px;
+    float: right;
+    color: White;
+    font-size: 20px;
+     max-height: 30px;
+}
+
+.nav ul {
+    margin-top:15px;
+    list-style: none;
+}
+
+.nav ul li {
+    width: 150px;
+    display: inline-block;
+    color: White;
+    text-align: center;
+    font-size: 22px;
+    font-weight:bold;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color:#fff;
+    display:block
+}
+
+.nav ul li a:hover {
+    background: white;
+    color: blue;
+    border-radius: 10px;
+}
+
+.loginDisplay {
+    font-size: 22px;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link {
+    color: white;
+}
+
+.loginDisplay a:visited {
+    color: white;
+}
+
+.loginDisplay a:hover {
+    color: white;
+}
+
+.breadcrumb {
+    text-align: center;
+    width: auto;
+    margin-left: -15px;
+    padding: 10px;
+    background-color: #15b041;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    margin-top: -10px;
+    color: White;
+}
+
+.fas {
+    color: White;
+}
+
+.fas:hover {
+    background-color: white;
+    color: #0056b3;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: White;
+}
+
+/*----------Sidebar Styling For Admin, Doctor and Patient Masterpages-----------------*/
+
+.main-container {
+    display: flex;
+    width: auto;
+}
+
+.MyHealth-main {
+    flex: 80%; 
+    padding: 10px;
+}
+
+.MyHealth-side {
+    text-align:center;
+    flex: 20%;
+    height: 275px;
+    background:#176fa6;
+    padding: 1px 1px;
+    margin-top: 25px;
+    margin-left: -30px;
+}
+
+.MyHealth-sidebar  {
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.MyHealth-sidebar-link a {
+    line-height: 30px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 20px;
+    color: White;
+    font-weight: bold;
+    text-decoration: none;
+    display:block;
+}
+
+.MyHealth-sidebar-link a:hover {
+    background: white;
+    color: blue;
+    border-radius: 10px;
+}
+
+
+/*-----------Buttons CSS--------------------*/
+
+.linksbutton {   
+    width: 300px;
+    text-align: center;
+    background-color: #15b041;
+    color: #fff;
+    border: solid;
+    border-color: #000000;
+    padding: 6px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.linksbutton:link,
+.linksbutton:visited {
+    color: #fff; 
+}
+
+.linksbutton:active {
+    color: #fff; 
+}
+
+.linksbutton:hover {
+    background-color: white;
+    color: #0056b3;
+}
+
+.button {
+    grid-column: controls;
+    grid-row: auto;
+    border: solid;
+    border-color: #000000;
+    padding: 8px 10px;
+    width: 300px;
+    background-color: #15b041;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: antiquewhite;
+    color: #0056b3;
+}
+
+/* -----------Slideshow container--------------- */
+.slideshow-container {
+    position: relative;
+    background-color: #F5F5DC;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    height: auto;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+    margin: 0px auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*----------Slideshows Styling From Database-----------*/
+.full-name {
+    margin-top: -60px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.comments {
+    font-style: italic;
+    padding: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /*box shadow */
+    border-radius: 5px; /*rounded corners */
+    background-color: #15b041;
+    color: #333;
+    font-size: 16px;
+}
+
+.date {
+    font-size: 18px;
+    color: #666;
+}
+
+/*-----------Icons CSS------------*/
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    background-color:#176fa6;
+    color: white;
+    border: 2px solid white;
+}
+
+.fa:hover {
+    background: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+/* ------Section containers------- */
+.section-one {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border: 1px solid black;
+   justify-content: space-between;
+    width: 85%;
+    margin-left:10%;
+    box-sizing: border-box;
+    padding: 20px;
+     background-color: 	#F5F5DC;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* columns */
+.section-one > * {
+    padding:1rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+}
+
+.section-two {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: space-between;
+    width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+     background-color: #F5F5DC;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* columns */
+.section-two > * {
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-three {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid black;
+   justify-content: space-between;
+    width: 80%;
+    margin-left:10%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #F5F5DC;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* columns */
+.section-three > * {
+    padding:1rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.Sectionbutton {   
+    margin-left: 40px;
+    width: 325px;
+    text-align: center;
+    background-color: #15b041;
+    color: #fff;
+    border: solid;
+    border-color: #000000;
+    padding: 6px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.Sectionbutton:link,
+.Sectionbutton:visited {
+    color: #fff; 
+}
+
+.Sectionbutton:active {
+    color: #fff; 
+}
+
+.Sectionbutton:hover {
+    background-color: white;
+    color: #0056b3;
+}
+
+
+.heading {
+     font-size: 40px;
+     font-weight: bold;
+     line-height: 1;
+     color: #333;
+     text-align:center;
+}
+
+.SubHeadings {
+    text-align: center;
+    font-size: 30px; 
+    color: #333;
+}
+
+/*--------Common Styling-----------*/
+.paragraph {
+    margin-left: 10px;
+    padding: 10px;
+    letter-spacing: 0.55px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+}
+
+.description {
+    font-style: italic;
+    color: #333; 
+    font-size: 14px; 
+    margin-top: 5px; 
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/*------------About Us Page Styling------------------*/
+
+.aboutus {
+    padding: 20px;
+    background-color:#F5F5DC;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.MissionVision {
+    text-align: center;
+    margin-left: 10px;
+    padding: 40px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 30px;
+    color: #333;
+}
+
+/*---------------Services Page Styling-------------------*/
+
+.our-services-pg {
+    width: 90%;
+    margin-left: 5%;
+    box-sizing: border-box;
+    text-align: justify;
+    line-height: 1.6;
+    color: #666;
+    font-size: 16px;
+    padding: 10px;
+}
+    
+
+/*-------------Blog Page Table Styling-----------------*/
+ 
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    font-weight:bold;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-style: italic;
+}
+
+#aboutAxiety-pg {
+    color: #000000;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    margin-bottom:20px;
+}
+    
+article {
+    border: 1px solid black;
+    justify-content: space-between;
+    width: 80%;
+    margin-left:10%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: 	#F5F5DC;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/*--------------Contact Us Page Styling------------------*/
+
+.ContactBox {
+    background-color:#176fa6;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* Form labels */
+.formLables {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* Form controls */
+.form-control {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.thank-you-message {
+    font-size: 1.2em;
+    color: #333;
+    background-color: #F5F5DC;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+#thankYouPanel {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.contact-section {
+    width: 45%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+     background-color: #F5F5DC;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.contact-details {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.map-container {
+    width: 100%
+    height: 100vh
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Styles For The Map*/
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 500px;
+    filter: invert(100%);
+}
+
+/*----------Feedback Form Styling----------------*/
+
+.feedback-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color:#176fa6;
+}
+
+.feedback-container h1 {
+    text-align: center;
+}
+
+.feedback-container label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: White;
+}
+
+.feedback-container input,
+.feedback-container textarea,
+.feedback-container select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-container .thank-you-message {
+    font-size: 1.2em;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+/*--------FAQ Page Styling------------------*/
+
+.faq-header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+}
+
+.faq-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.faq-header p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-header img {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.faq-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -70px;
+}
+
+.faq-section {
+    margin-top: 20px;
+}
+
+.faq-section h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 0;
+}
+
+.faq-item p {
+    display: none;
+    margin: 10px 0 0;
+    color: #555;
+}
+            
+/*-------------Form Styling For Login Page, Registration Page, Add Booking Page, Add Blog Page and Add Doctor Page-----------------*/
+
+.myForm {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: [labels] auto [controls] 1fr;
+    grid-auto-flow: row;
+    grid-gap: .8em;
+    background-color: #176fa6;
+    padding: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.myFormHeading {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.label {
+    margin-left: 30px;
+    grid-column: labels;
+    grid-row: auto;
+    font-weight: bold;
+    color: White;
+}
+
+.TextBox {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.aspNetCalendar {
+    width: 300px;
+    border: 1px solid #4CCAEF;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-left: -3px;
+    color: black;
+}
+
+.aspNetCalendar td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: black;
+}
+
+.aspNetCalendar .aspNetCalendar_DayName {
+    background-color: #4CCAEF;
+    color:black;
+    font-weight: bold;
+}
+
+.aspNetCalendar .aspNetCalendar_SelectedDay {
+    background-color: #25bae5;
+    color: black;
+}
+
+.aspNetCalendar .aspNetCalendar_TodayDay {
+    background-color: #f2f2f2;
+    box-shadow: 0 0 7px 3px #e5e5e5;
+}
+    

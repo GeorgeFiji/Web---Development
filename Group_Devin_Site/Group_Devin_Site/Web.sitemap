@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/SitePages/Home.aspx" title="Home" description="Home Page">
+    <siteMapNode url="~/SitePages/Login.aspx" title="Login" description="Login Page" />
+    <siteMapNode url="~/SitePages/UserRegistration.aspx" title="Register" description="Registration Page" />
+    <siteMapNode url="~/SitePages/PatientBooking.aspx" title="Patient" description="Patient Booking Page" />
+    <siteMapNode url="~/SitePages/DoctorBooking.aspx" title="Doctor" description="Doctor Booking Page" />
+    <siteMapNode url="~/SitePages/Appointment.aspx" title="Appointment" description="Appointment Page" />
+    <siteMapNode url="~/SitePages/Services.aspx" title="Services" description="Services Page" />
+    <siteMapNode url="~/SitePages/AboutUs.aspx" title="About Us" description="About Us Page" />
+    <siteMapNode url="~/SitePages/Specialist.aspx" title="Specialists" description="Specialists Page" />
+    <siteMapNode url="~/SitePages/Blogs.aspx" title="Blogs" description="Blogs Page" />
+    <siteMapNode url="~/SitePages/ContactUs.aspx" title="Contact Us" description="Contact Us Page" />
+    <siteMapNode url="~/SitePages/Feedback.aspx" title="Feedback" description="Feedback Page" />
+    <siteMapNode url="~/SitePages/FAQ.aspx" title="FAQ" description="FAQ Page" />
+    <!-- Doctor nodes -->
+    <siteMapNode url="~/DoctorPortalPages/DoctorAppointmentSchedule.aspx" title="View Appointment Schedule" description="Doctor's Appointment Schedule Page" />
+    <siteMapNode url="~/DoctorPortalPages/EditAppointmentSchedules.aspx" title="Edit Appointment Schedules" description="Edit Doctor's Appointment Schedules Page" />
+    <siteMapNode url="~/DoctorPortalPages/ViewPatientRecords.aspx" title="View Patients Records" description="View Patient Records Page" />
+    <siteMapNode url="~/DoctorPortalPages/ViewQuestions.aspx" title="Answer a Question" description="Answer a Question Page" />
+    <siteMapNode url="~/DoctorPortalPages/ViewFeedback.aspx" title="View Feedback" description="View Feedback Page" />
+    <siteMapNode url="~/DoctorPortalPages/AddBlog.aspx" title="Add a Blog" description="Add a Blog Page" />
+    <siteMapNode url="~/DoctorPortalPages/EditBlogs.aspx" title="Edit Your Blogs" description="Edit Your Blogs Page" />
+    <!-- Patient nodes -->
+    <siteMapNode url="~/PatientPortalPages/PatientAppointmentHistory.aspx" title="Appointment History" description="Patient's Appointment History Page" />
+    <siteMapNode url="~/PatientPortalPages/AddAppointment.aspx" title="Add Appointment" description="Add Appointment Page" />
+    <siteMapNode url="~/PatientPortalPages/PatientEditAppointment.aspx" title="Edit Appointments" description="Edit Appointments Page" />
+    <!-- Admin nodes -->
+    <siteMapNode url="~/AdminPages/EditAdmin.aspx" title="Edit Admins" description="Edit Admins Page" />
+    <siteMapNode url="~/AdminPages/EditDoctors.aspx" title="Edit Doctors" description="Edit Doctors Page" />
+    <siteMapNode url="~/AdminPages/AddDoctors.aspx" title="Add Doctors" description="Add Doctors Page" />
+    <siteMapNode url="~/AdminPages/EditPatients.aspx" title="Edit Patients" description="Edit Patients Page" />
+    <siteMapNode url="~/AdminPages/EditAppointments.aspx" title="Edit Appointments" description="Edit Appointments Page" />
+    <siteMapNode url="~/AdminPages/EditQuestions.aspx" title="Edit Questions" description="Edit Questions Page" />
+    <siteMapNode url="~/AdminPages/EditFeedback.aspx" title="Edit Feedback" description="Edit Feedback Page" />
+    <siteMapNode url="~/AdminPages/AdminEditBlogs.aspx" title="Edit Blogs" description="Edit Blogs Page" />
+  </siteMapNode>
+</siteMap>
+
+

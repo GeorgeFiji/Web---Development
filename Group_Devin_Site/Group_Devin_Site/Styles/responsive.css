@@ -1,0 +1,315 @@
+﻿/* CSS for small devices such as large phones (640px and up) */
+@media only screen and (min-width: 40em) {
+    .Masterpage-grid > .header,
+    .Masterpage-grid > .nav,
+    .Masterpage-grid > .main-content,
+    .Masterpage-grid > .footer {
+        padding: 0.5rem;
+    }
+    .nav ul li {
+        width: 100px;
+        font-size: 18px;
+    }
+    .MyHealth-main {
+        flex: 100%;
+    }
+    .MyHealth-side {
+        flex: 100%;
+    }
+    .linksbutton, .button, .Sectionbutton {
+        font-size: 14px;
+        padding: 4px 6px;
+    }
+    .button, .Sectionbutton, .linksbutton {
+        width: 200px;
+    }
+    .slideshow-container {
+        max-width: 500px;
+    }
+    .fa {
+        padding: 15px;
+        font-size: 15px;
+        width: 35px;
+    }
+    .section-one, .section-two, .section-three {
+        width: 95%;
+        padding: 10px;
+    }
+    .full-name {
+        font-size: 20px;
+    }
+    .comments {
+        font-size: 14px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    .SubHeadings {
+        font-size: 25px;
+    }
+    .paragraph {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .description {
+        font-size: 12px;
+    }
+    .aboutus {
+        max-width: 95%;
+    }
+    .MissionVision {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .our-services-pg {
+        font-size: 14px;
+    }
+    table {
+        width: 95%;
+    }
+    .myForm, .ContactBox, .contact-section {
+        width: 90%;
+    }
+    .detailsViewContainer {
+        width: 80%;
+    }
+}
+
+/* CSS for medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+    .Masterpage-grid > .header,
+    .Masterpage-grid > .nav,
+    .Masterpage-grid > .main-content,
+    .Masterpage-grid > .footer {
+        padding: 1rem;
+    }
+    .Masterpage-grid {
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-areas:
+            'header header header'
+            'nav nav nav'
+            'main-content main-content main-content'
+            'footer footer footer';
+    }
+    .nav ul li {
+        width: 120px;
+        font-size: 20px;
+    }
+    .MyHealth-main {
+        flex: 70%;
+    }
+    .MyHealth-side {
+        flex: 30%;
+    }
+    .linksbutton, .button, .Sectionbutton {
+        font-size: 16px;
+        padding: 5px 7px;
+    }
+    .button, .Sectionbutton, .linksbutton {
+        width: 250px;
+    }
+    .slideshow-container {
+        max-width: 600px;
+    }
+    .fa {
+        padding: 18px;
+        font-size: 18px;
+        width: 40px;
+    }
+    .section-one, .section-two, .section-three {
+        width: 90%;
+        padding: 15px;
+    }
+    .full-name {
+        font-size: 22px;
+    }
+    .comments {
+        font-size: 15px;
+    }
+    .heading {
+        font-size: 35px;
+    }
+    .SubHeadings {
+        font-size: 27px;
+    }
+    .paragraph {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .description {
+        font-size: 13px;
+    }
+    .aboutus {
+        max-width: 90%;
+    }
+    .MissionVision {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .our-services-pg {
+        font-size: 15px;
+    }
+     table {
+        width: 90%;
+    }
+    .myForm, .ContactBox, .contact-section {
+        width: 85%;
+    }
+    .detailsViewContainer {
+        width: 70%;
+    }
+}
+
+/* CSS for large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+    .Masterpage-grid > .header,
+    .Masterpage-grid > .nav,
+    .Masterpage-grid > .main-content,
+    .Masterpage-grid > .footer {
+        padding: 1.5rem;
+    }
+    .nav ul li {
+        width: 130px;
+        font-size: 22px;
+    }
+        .MyHealth-main {
+        flex: 80%;
+    }
+    .MyHealth-side {
+        flex: 20%;
+    }
+        .linksbutton, .button, .Sectionbutton {
+        font-size: 18px;
+        padding: 6px 8px;
+    }
+    .button, .Sectionbutton, .linksbutton {
+        width: 300px;
+    }
+    .slideshow-container {
+        max-width: 700px;
+    }
+    .fa {
+        padding: 20px;
+        font-size: 20px;
+        width: 45px;
+    }
+    .section-one, .section-two, .section-three {
+        width: 85%;
+        padding: 20px;
+    }
+    .full-name {
+        font-size: 25px;
+    }
+    .comments {
+        font-size: 16px;
+    }
+    .heading {
+        font-size: 40px;
+    }
+    .SubHeadings {
+        font-size: 30px;
+    }
+    .paragraph {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .description {
+        font-size: 14px;
+    }
+    .aboutus {
+        max-width: 85%;
+    }
+    .MissionVision {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .our-services-pg {
+        font-size: 16px;
+    }
+    table {
+        width: 80%;
+    }
+    .myForm, .ContactBox, .contact-section {
+        width: 80%;
+    }
+    .detailsViewContainer {
+        width: 60%;
+    }
+}
+
+/* CSS for largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+    .Masterpage-grid > .header,
+    .Masterpage-grid > .nav,
+    .Masterpage-grid > .main-content,
+    .Masterpage-grid > .footer {
+        padding: 2rem;
+    }
+    .nav ul li {
+        width: 150px;
+        font-size: 24px;
+    }
+        .MyHealth-main {
+        flex: 80%;
+    }
+    .MyHealth-side {
+        flex: 20%;
+    }
+    .linksbutton, .button, .Sectionbutton {
+        font-size: 20px;
+        padding: 8px 10px;
+    }
+    .button, .Sectionbutton, .linksbutton {
+        width: 350px;
+    }
+    .slideshow-container {
+        max-width: 800px;
+    }
+    .fa {
+        padding: 25px;
+        font-size: 25px;
+        width: 50px;
+    }
+     .section-one, .section-two, .section-three {
+        width: 80%;
+        padding: 25px;
+    }
+    .full-name {
+        font-size: 30px;
+    }
+    .comments {
+        font-size: 18px;
+    }
+    .heading {
+        font-size: 45px;
+    }
+    .SubHeadings {
+        font-size: 35px;
+    }
+    .paragraph {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .description {
+        font-size: 16px;
+    }
+    .aboutus {
+        max-width: 80%;
+    }
+    .MissionVision {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .our-services-pg {
+        font-size: 18px;
+    }
+    table {
+        width: 80%;
+    }
+    .myForm, .ContactBox, .contact-section {
+        width: 75%;
+    }
+    .detailsViewContainer {
+        width: 50%;
+    }
+}

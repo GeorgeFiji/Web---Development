@@ -1,0 +1,24 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPages/SerenitySage.master" AutoEventWireup="false" CodeFile="MyHealthAdmin.master.vb" Inherits="MasterPages_MyHealth" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" Runat="Server">
+    <div class="main-container">
+        <aside class="MyHealth-side">
+            <ul class="MyHealth-sidebar">
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkEditAdmin" runat="server" NavigateUrl="~/AdminPages/EditAdmin.aspx">Edit Admins</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkEditDoctors" runat="server" NavigateUrl="~/AdminPages/EditDoctors.aspx">Edit Doctors</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkAddDoctors" runat="server" NavigateUrl="~/AdminPages/AddDoctors.aspx">Add Doctors</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkEditPatients" runat="server" NavigateUrl="~/AdminPages/EditPatients.aspx">Edit Patients</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkEditAppointments" runat="server" NavigateUrl="~/AdminPages/EditAppointments.aspx">Edit Appointments</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkEditQuestions" runat="server" NavigateUrl="~/AdminPages/EditQuestions.aspx">Edit Questions</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkEditFeedback" runat="server" NavigateUrl="~/AdminPages/EditFeedback.aspx">Edit Feedback</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkEditBlogs" runat="server" NavigateUrl="~/AdminPages/AdminEditBlogs.aspx">Edit Blogs</asp:HyperLink></li>
+            </ul>
+        </aside>
+        <main class="MyHealth-main">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </main>
+    </div>
+</asp:Content>

@@ -1,0 +1,23 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPages/SerenitySage.master" AutoEventWireup="false" CodeFile="MyHealthDoctors.master.vb" Inherits="MasterPages_MyHealthDoctors" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" Runat="Server">
+    <div class="main-container">
+        <aside class="MyHealth-side">
+            <ul class="MyHealth-sidebar">
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkAppointmentSchedule" runat="server" NavigateUrl="~/DoctorPortalPages/DoctorAppointmentSchedule.aspx">View Appointment Schedule</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkEditSchedule" runat="server" NavigateUrl="~/DoctorPortalPages/EditAppointmentSchedules.aspx">Edit Appointment Schedules</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkViewPatients" runat="server" NavigateUrl="~/DoctorPortalPages/ViewPatientRecords.aspx">View Patients Records</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkAddBlog" runat="server" NavigateUrl="~/DoctorPortalPages/AddBlog.aspx">Add a Blog</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkEditBlog" runat="server" NavigateUrl="~/DoctorPortalPages/EditBlogs.aspx">Edit Your Blogs</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkFeedback" runat="server" NavigateUrl="~/DoctorPortalPages/ViewFeedback.aspx">View Feedback</asp:HyperLink></li>
+                <li class="MyHealth-sidebar-link"><asp:HyperLink ID="linkAnsQuestion" runat="server" NavigateUrl="~/DoctorPortalPages/ViewQuestions.aspx">Answer a Question</asp:HyperLink></li>
+            </ul>
+        </aside>
+        <main class="MyHealth-main">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </main>
+    </div>
+</asp:Content>
